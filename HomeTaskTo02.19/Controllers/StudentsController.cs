@@ -9,10 +9,10 @@ namespace HomeTaskTo02._19.Controllers
     [ApiController]
     public class StudentsController : ControllerBase
     {
-        private readonly StudentService _studentService;
+        private readonly IStudentService _studentService;
 
 
-        public StudentsController(StudentService studentService)
+        public StudentsController(IStudentService studentService)
         {
             _studentService = studentService;
         }
